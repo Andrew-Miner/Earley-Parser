@@ -1,5 +1,5 @@
 # Earley-Parser
-An [Earley Parser](https://en.wikipedia.org/wiki/Earley_parser) implemented in both C++ and Javascript. The C++ implementation needs some work to make it practical for use in other projects.
+An [Earley Parser](https://en.wikipedia.org/wiki/Earley_parser) implemented in both C++ and Javascript. The C++ implementation needs some work to make it practical for use in other projects. For this reason I will stick to explaining the Javascript implementation only.
 
 This Earley Parser consists of two main components. The Recogniser ([`EarleyRecognizer.js`](https://github.com/Andrew-Miner/Earley-Parser/blob/main/Javascript%20Implementation/Earley%20Parser/EarleyRecognizer.js)) and the Parser ([`EarleyParser.js`](https://github.com/Andrew-Miner/Earley-Parser/blob/main/Javascript%20Implementation/Earley%20Parser/EarleyParser.js)). The Recogniser determines if the input is valid and stores information about partial parses in tables. These tables are then handed off to the Parser. The Parser uses these tables to construct an abstract syntax tree and then applies Semantic Actions given by the user to "interpret" the given input.
 
