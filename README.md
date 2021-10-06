@@ -48,7 +48,7 @@ try {
         arithmeticGrammar = null;
 }
 ```
-In this example the string `ARITHMETIC_STR` is a language representing any arithmetic equation, such as `18/(3-7)+2*5`.
+In this example the string `ARITHMETIC_STR` is a language in Backus-Naur form representing any arithmetic equation, such as `18/(3-7)+2*5`.
 
 We can now use the `arithmeticGrammar` we just constructed to parse and interpret the value of the string `18/(3-7)+2*5`:
 ```javascript
