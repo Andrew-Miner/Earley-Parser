@@ -8,7 +8,7 @@ In order to use the parser, it must first be given a [Context Free Grammar](http
 To simplify the construction of Context Free Grammars and to avoid having to write them out in JavaScript, the JS implementation includes BNF interpreter functions ([`BNFInterpreter.js`](https://github.com/Andrew-Miner/Earley-Parser/blob/main/Javascript%20Implementation/Earley%20Parser/BNFInterpreter.js)) that use a Grammar and set of Semantic Actions to construct Context Free Grammars from strings in [Backus-Naur form](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form).
 
 ## Live Demo
-I use this implementation to parse boolean expressions for my [Boolean Expression Simplifier](https://andrew-miner.github.io/Bool-Simplifier-Website/) single-page React App. You can find the [github repository with the source code](https://github.com/Andrew-Miner/Bool-Simplifier-Website/tree/master/src) on my profile.
+I use this implementation to parse boolean expressions for my [Boolean Expression Simplifier](https://andrew-miner.github.io/Bool-Simplifier-Website/) single-page React App. You can find the [github repository with the source code](https://github.com/Andrew-Miner/Bool-Simplifier-Website) on my profile.
 
 ## Javascript Examples
 
