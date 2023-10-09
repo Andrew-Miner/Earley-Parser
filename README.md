@@ -59,11 +59,11 @@ import Recognizer from "../Earley Parser/EarleyRecognizer";
 import Parser, { ParseNode } from "../Earley Parser/EarleyParser";
 
 let semanticActions = [
-    (lOperand, op, rOperand) => lOperand + op + rOperand,
-    (lOperand, op, rOperand) => lOperand + op + rOperand,
+    (lOperand, op, rOperand) => eval(lOperand + op + rOperand),
+    (lOperand, op, rOperand) => eval(lOperand + op + rOperand),
     (product) => product,
-    (lOperand, op, rOperand) => lOperand + op + rOperand,
-    (lOperand, op, rOperand) => lOperand + op + rOperand,
+    (lOperand, op, rOperand) => eval(lOperand + op + rOperand),
+    (lOperand, op, rOperand) => eval(lOperand + op + rOperand),
     (factor) => factor,
     (lParen, sum, rParen) => sum,
     (number) => number,
@@ -85,6 +85,6 @@ if (arithParseTree === null) {
     solution = Parser.applySemanticAction((token) => token, arithParseTree, semanticActions);
 }
 ```
-Once this code has been successfully ran, the value of the variable `solution` should be `5.5`. 
+Once this code has been successfully run, the value of the variable `solution` should be `5.5`. 
 
 Note: for every rule in the arithmetic grammar there is a corresponding semantic action. These semantic actions are called while the Earley Parser recursively walks the parse tree. It hands the output of one semantic action to the input of the next semantic action.
