@@ -85,7 +85,7 @@ if (arithParseTree === null) {
     solution = Parser.applySemanticAction((token) => token, arithParseTree, semanticActions);
 }
 ```
-<sup>Note: eval() is a potential security risk and should not be used. The eval calls in this snippet are unnecessary and have been used for simplicity's sake. By using parseInt()/parseFloat() and the appropriate operator for each rule eval() can be avoided.</sup>
+<sup><b>Note:</b> eval() is a potential security risk and should not be used. The eval calls in this snippet are unnecessary and have been used for simplicity's sake. By using parseInt()/parseFloat() and the appropriate operator for each rule eval() can be avoided.</sup>
 
 Once this code has been successfully run, the value of the variable `solution` should be `5.5`. 
 
